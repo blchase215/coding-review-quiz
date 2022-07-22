@@ -16,7 +16,36 @@
 
 // Variables
 // 
-// 
+// timer
+
+// questions/answers
+      //I talked this out with Jake, but I will try to lay it out here.
+      
+      // Idea for Q&A variable:  an array of objects.
+      
+      // the master list variable looks like:
+      // qaList = [qaItem1[], qaitem2[], qaitem3[], ...]; and so on, for however many questions we have.
+      
+      // each question is an array of one string and 4 objects and looks like:
+      // qaItem ["The Question", answer1, answer2, answer3, answer4];
+      // each answer will look like:
+            //answer1 {
+            //    answer: "answer text here.",
+            //   correct: true or false
+            //};
+      // If we use this structure, then
+            // index 0 of each item will always be the question
+            // index 1-4 will always be the answers
+            // therefor, it will be easy and intuitive to assign each question to the li
+            // correct answer baked into object, no need for extra variable
+            // ability to structure entire quiz function as a nested loop where each
+            // time the loop runs is the next question
+            // to illustrate with psuedocode:
+                  // click start begins loop, first Q and As populate, timer starts
+                  // click on an answer, tells loop to increment counter and advance.
+      // I am sure it could be broken down further, but I think that illustrates the concept I am going for.
+      // let me know, if I missed anything
+
 
 // click start begins quiz and timer
 // 
@@ -38,16 +67,7 @@
     // use <ol>
     // make <li> elements a button
     // potential style: correct answer turns button green onClick
-//                   incorrect answer turns button red onClick
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
+//                    incorrect answer turns button red onClick
 // 
 // 
 // 
