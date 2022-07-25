@@ -1,0 +1,80 @@
+:root {
+    --horizon: #56839f;
+    --clamShell: #ccaaa6;
+    --lotus: #7e3a3a;
+    --fiord: #3e4e6a;
+    --viridianGreen: #5c8c79;
+    --melanzane: #20061F;
+    --text: #d8dddd;
+}
+
+* {
+    display: block;
+    font-size:  18px;
+    
+}
+
+title {
+    display: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    padding: 5% 3%;
+    background-color: var(--fiord);
+    color: var(--text);
+    text-shadow: 2px 2px var(black);
+    border-radius: 10px;
+    /* margin: auto; */
+}
+body {
+    padding: 20px 28%;
+    background-color: var(--fiord);
+}
+#welcome {
+    text-align: center;
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px 3px var(--horizon);
+}
+
+#testArea {
+    width: 100%;
+    text-align: left;
+    word-wrap: normal;
+    padding: 7px;
+    background-color: var(--lotus);
+    border-radius: 15px;
+    box-shadow: 0px 0px 17px 3px var(--horizon);
+}
+
+#inputArea {
+    display: flex;
+    width: auto;
+    padding: 7%;
+    margin: 5%;
+    /* margin: auto; */
+    background-color: var(--clamShell);
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px 3px var(--fiord);
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+button {
+    text-align: center;
+    margin: 5%;
+    padding: 5%;
+    width: 50%;
+    font-size: 2rem;
+    color: var(--text);
+    text-shadow: 2px 2px var(--fiord);
+    border-radius: 10px;
+    background-color: var(--viridianGreen);
+    box-shadow: 0px 0px 13px 3px var(--fiord);
+}

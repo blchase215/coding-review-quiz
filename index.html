@@ -5,31 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Javascript Review Quiz</title>
 </head>
+
 <body>
-    <header>
-        <div id = "testArea" class = "tbd">
-            <h1 id = "welcome">Welcome to the Javascript Review Quiz!</h1>
-            <p id = "intro"><pre>
+    <section id = "testArea" class = "tbd">
+
+         <header id = "welcome">
+            <h1>Welcome to the Javascript Review Quiz!</h1>
+        </header>
+        
+        <div id = "inputArea">
+            <p id = "intro">
                     This is a timed quiz meant to test how much you remember 
-                of the <strong>Javascript</strong> you have learned thus far.  Reviewing our
+                of the Javascript you have learned thus far.  Reviewing our
                 knowledge helps to keep it fresh in our minds and saves 
                 valuable time away from MDN and Stack Overflow!
 
-                    The quiz will begin as soon as you <strong>click the button below</strong>.
+                    The quiz will begin as soon as you click the button below.
                 Click the button for the correct answer as quick as you can 
                 because the time remaining when you complete the quiz is your
-                <strong>High Score</strong>.
-
+                High Score.
+                
                     Be careful!  Each question you answer incorrectly will
                 subtract precious seconds off your potential score!
 
                     Good Luck!
-            </pre></p>
-            
+            </p>
         </div>
-    </header>
+        <div id = "questionBox">
+            <!-- dynamically populate <ol> elements here during the test -->
+        </div>
+        <div class = "buttons">
+            <button id = "start">
+                Start
+            </button>
+            <button id = "viewScores">
+                <!-- a button to view tha high scores page -->
+                View High Scores
+            </button>
+        </div>
+    </section>
+
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
