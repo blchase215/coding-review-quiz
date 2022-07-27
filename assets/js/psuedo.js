@@ -98,3 +98,18 @@
 // 
 // 
 // 
+// var timeInterval = setInterval(function () {
+
+//     timeLeft--;
+//     // PRINT the seconds remaining
+//     timerEl.textContent = timeLeft + " seconds remaining"
+
+//     if (timeLeft <= 0) {
+//       clearInterval(timeInterval);
+//       // CALL displayMessage
+//       displayMessage();
+//       // ?? HIDE countdown text
+//       timerEl.textContent = "";
+//     }
+//   }, 1000);
+// }

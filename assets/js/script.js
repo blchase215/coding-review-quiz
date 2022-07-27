@@ -149,7 +149,7 @@ var createTestButtons = function() {
       var ansBtn2 = document.createElement('li');
       var ansBtn3 = document.createElement('li');
       var ansBtn4 = document.createElement('li');
-      
+      //hiding the correct answer
       ansBtn0.textContent = questionTemplate2.answers[0];
       ansBtn0.setAttribute('style', 'display:none');
       
@@ -174,16 +174,13 @@ var createTestButtons = function() {
 
 }
 
-createTestButtons();
+
 
 var startTest = function(event) {
       event.preventDefault();
+      createTestButtons;
       
-      if (this.event === startBtn) {
-            console.log('I\'m in');
-      }
 }
-
 // Target variables
 // -----
 // getters
@@ -192,6 +189,4 @@ var welcome = document.getElementById('#welcome')
 var inputArea = document.getElementById('#inputArea');
 var startBtn = document.getElementById('#start');
 var highScoresBtn = document.getElementById('#highScores');
-var begin = document.addEventListener('click', startTest);
-
-
+var begin = startBtn.addEventListener('click', startTest);
