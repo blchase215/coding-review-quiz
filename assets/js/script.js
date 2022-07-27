@@ -94,7 +94,7 @@ var questionTemplate2 = {
       
       answers: [
 
-      //  'Correct Answer'
+      //  'Correct Answer' is index 0
       'Answer3',
       
       'Answer1',
@@ -137,20 +137,52 @@ var questionTemplate2 = {
             console.log('correct');
       }
       
+// functions
+var createTestButtons = function() {
+      answerBox.appendChild()
+
+}
+var question = document.createElement('h1');
+var ansBox = document.createElement('ol');
+var ansBtn0 = document.createElement('li');
+var ansBtn1 = document.createElement('li');
+var ansBtn2 = document.createElement('li');
+var ansBtn3 = document.createElement('li');
+var ansBtn4 = document.createElement('li');
 
 
+ansBtn1 = document.createElement('li');
+ansBtn2 = document.createElement('li');
+ansBtn3 = document.createElement('li');
+ansBtn4 = document.createElement('li');
 
-function startTest(event) {
+console.log(ansBox);
+console.log(ansBtn0);
+ansBox.appendChild(ansBtn0);
+ansBox.appendChild(ansBtn1);
+ansBox.appendChild(ansBtn2);
+ansBox.appendChild(ansBtn3);
+ansBox.appendChild(ansBtn4);
+
+
+var startTest = function(event) {
       event.preventDefault();
-      console.log('I\'m in');
+      
+      if (this.begin === startBtn) {
+            console.log('I\'m in');
+      }
 }
 
 // Target variables
 // -----
-var startButton = document.querySelector('#start');
-var highScoresbtn = document.querySelector('#highScores');
+// getters
+var testArea = document.getElementById('#testArea');
+var welcome = document.getElementById('#welcome')
+var inputArea = document.getElementById('#inputArea');
+var startBtn = document.getElementById('#start');
+var highScoresBtn = document.getElementById('#highScores');
+var begin = document.addEventListener('click', startTest);
 
-startButton.addEventListener('click', startTest);
 
 // Psuedocode
 // 
@@ -170,6 +202,11 @@ startButton.addEventListener('click', startTest);
 
 // Variables
 // 
+
+// player score
+
+// high score
+
 // timer
 
 // questions/answers
