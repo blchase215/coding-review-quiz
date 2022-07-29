@@ -184,9 +184,10 @@ var startTest = function(event) {
 // Target variables
 // -----
 // getters
-var testArea = document.getElementById('#testArea');
-var welcome = document.getElementById('#welcome')
-var inputArea = document.getElementById('#inputArea');
-var startBtn = document.getElementById('#start');
-var highScoresBtn = document.getElementById('#highScores');
+var testArea = document.getElementById('testArea');
+var welcome = document.getElementById('welcome')
+var inputArea = document.getElementById('inputArea');
+var startBtn = document.getElementById('start');
+console.log(startBtn);
+var highScoresBtn = document.getElementById('highScores');
 var begin = startBtn.addEventListener('click', startTest);

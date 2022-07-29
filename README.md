@@ -6,4 +6,8 @@ A quiz to test your coding knowledge.  Answer questions and get them correct, or
 
 ## Usage
 
-Begin by clicking the **Start** button.  You will be presented with the first question and the timer will begin counting down.  Clicking a 
+Begin by clicking the **Start** button.  You will be presented with the first question and the timer will begin counting down.
+
+## Link
+
+https://blchase215.github.io/coding-review-quiz/
